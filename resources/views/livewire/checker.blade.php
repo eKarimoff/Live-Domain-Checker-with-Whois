@@ -6,6 +6,9 @@
     @if (Session::has('danger'))
     <div class="alert alert-danger" role="alert">{{ Session::get('danger') }} </div>
     @endif
+    @if (Session::has('bad'))
+    <div class="alert alert-warning" role="alert">{{ Session::get('bad') }} </div>
+    @endif
    
         <form>
             <div class="input-group mb-3">
