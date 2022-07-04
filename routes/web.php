@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CheckController;
+use App\Http\Controllers\DomainController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +13,6 @@ use App\Http\Controllers\CheckController;
 |
 */
 
-Route::get('/', [CheckController::class,'checker'])->name('check');
+Route::get('/', [DomainController::class,'checker'])->name('check');
   
-Route::post('/index', [CheckController::class,'index']);
+
